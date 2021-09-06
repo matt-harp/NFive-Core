@@ -1,0 +1,23 @@
+name: Night/Core
+version: 1.0.0
+description: Core library
+author: Night
+license: LGPL-3.0-or-later
+server:
+  main:
+    - Night.Core.Server
+  include:
+    - Night.Core.Shared
+client:
+  main:
+    - Night.Core.Client
+  include:
+    - Night.Core.Shared
+  files:
+    - MenuAPI.dll
+    - Overlays/BrowserOverlay.html
+    - Overlays/global.css
+    - Overlays/build/bundle.js
+    - Overlays/build/bundle.css
+    - Overlays/font/Helvetica.woff
+    - Overlays/img/eyefind.png
